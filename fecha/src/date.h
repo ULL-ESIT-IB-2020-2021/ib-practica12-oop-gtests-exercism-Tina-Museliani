@@ -33,7 +33,6 @@ class Date {
 	friend std::ostream& operator<<(std::ostream &out, const Date &date);
 	friend bool operator== (const Date &d1, const Date &d2);
 	friend bool operator> (const Date &d1, const Date &d2);
-  std::string ToString(Date date);
 };
 
 std::vector<std::string> Read(std::string sample);

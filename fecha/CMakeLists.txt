@@ -47,6 +47,7 @@ include_directories(${PROJECT_SOURCE_DIR}/src)
 # Adds an executable target called "runTests" to be built from the source files listed in the command invocation.
 add_executable(runTests
     test/gtest_main.cc
+    test/test_date.cc
     src/date.h
     )
 

@@ -103,24 +103,11 @@ std::ostream& operator<< (std::ostream &out, const Date& date) {
  out << date.day() << "/" << date.month() << "/" << date.year(); 
  return out; 
 }
-
-
-// Convierte una Fecha en string
-std::string ToString(Date date) {
-	std::string resultado{""};
-  std::stringstream os;
-
-	// resultado = resultado + date.day() + "/" + date.month() + "/" + date.year();
-	os << date.day() << "/" << date.month() << "/" << date.year();
-  os >> resultado;
-
-	return resultado;
-}
-
+//Operador de igualdad
 bool operator== (const Date &d1, const Date &d2) {
   return (d1.day() == d2.day() && d1.month() == d2.month() && d1.year() == d2.year());
 }
-
+//Operador de comparación
 bool operator> (const Date &d1, const Date &d2) {
 	if (d1.year() > d2.year()) {
 		return true;
