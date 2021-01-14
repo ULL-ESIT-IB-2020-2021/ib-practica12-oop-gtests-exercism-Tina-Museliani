@@ -6,7 +6,7 @@
  *
  * @author Tinatin Museliani
  * @date 11 Jan 2021
- * @brief Definición de funciones para el programa principal
+ * @brief Programa principal con función main
  */
 
 #include "date.h"
